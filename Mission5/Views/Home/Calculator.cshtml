@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<!DOCTYPE html>
+<body>
+    <h1>Hourly Rate Calculator</h1>
+    <div class="container">
+        <label for="hours">Enter number of hours:</label><br>
+        <input type="number" id="hours" min="0" step="0.01"><br>
+        <label>Hourly rate:</label><br>
+        <input type="text" id="hourlyRate" value="$20.00" readonly><br>
+        <button id="calculateBtn">Calculate Total</button><br>
+        <div id="total"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
